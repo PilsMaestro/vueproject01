@@ -28,7 +28,6 @@
 </template>
 
 <script setup lang="ts">
-/* eslint-disable */
 const navColumns = ["Home", "About", "Contact", "Login", "Register"];
 </script>
 
