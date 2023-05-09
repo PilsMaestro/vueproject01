@@ -76,6 +76,9 @@ module.exports = {
       height: {
         "75-screen": "75vh",
       },
+      backgroundImage: {
+        sky: "url('assets/img3.png')",
+      },
     },
   },
   plugins: [],

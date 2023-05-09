@@ -1,42 +1,35 @@
 <template>
   <header class="headerHome">
     <div>
-      <img class="logo" src="../assets/Borrow4Less_logo.png" alt="logoBorrow4less">
+      <img class="logo" src="../assets/Borrow4Less_logo.png" alt="logoBorrow4less" />
     </div>
     <nav class="navHome">
       <div class="navItem" :key="idx" v-for="(navItem, idx) in navColumns">
-        <h1> {{ navItem }}
-        </h1>
+        <h1>{{ navItem }}</h1>
       </div>
     </nav>
   </header>
-  <div class="container">
-    <img src="../assets/img3.png" class="image" alt="Image">
-    <div class="text">Your Property Leading Club</div>
-    <div class="text2">Lend on property loans and earn 7-12% return p.a.</div>
+  <div class="flex items-center justify-center text-white">
+    <img src="../assets/img3.png " class="brightness-50" alt="foto" />
+    <div
+      max-len
+      class="absolute top-0 left-0 right-0 bottom-0 pb-[300px] flex flex-col items-center justify-center"
+    >
+      <div class="text-5xl">Your Property Leading Club</div>
+      <div class="text-3xl">Lend on property loans and earn 7-12% return p.a.</div>
+    </div>
   </div>
 
-  <div class="TitelVet"> Looking for real returns?
-  </div>
-  <img src="../assets/img2.png" class="kleinefoto" alt="foto">
+  <div class="TitelVet">Looking for real returns?</div>
+  <img src="../assets/img2.png" class="kleinefoto" alt="foto" />
   <div class="textondertitel">
     Lend from €1.000 and earn up to 12% fixed return p.a. on property loans through Blend.
   </div>
 </template>
 
 <script setup lang="ts">
-const navColumns = [
-  'Home',
-
-  'About',
-
-  'Contact',
-
-  'Login',
-
-  'Register',
-];
-
+/* eslint-disable */
+const navColumns = ["Home", "About", "Contact", "Login", "Register"];
 </script>
 
 <style scoped>
@@ -63,13 +56,11 @@ const navColumns = [
 }
 
 .logo {
-
   width: 60px;
 
   padding: 10px;
 
   padding-left: 20px;
-
 }
 
 .container {
